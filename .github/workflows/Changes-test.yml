@@ -1,7 +1,9 @@
-name: Changes-test
+name: 'Changes-test(eslint)'
 on:
-push:
+  push:
 jobs:
+  linter-job:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+  - name: "eslint check"   
+    run: make lint
