@@ -6,4 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "eslint check"   
-      run: echo test
+      run: npm install
+      run: make lint
