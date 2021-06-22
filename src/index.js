@@ -17,7 +17,7 @@ const gameGenerator = (questions, correctRepls, rules) => {
   while (i < 3) {
     console.log(`Question: ${questions[i]}`);
     UserRespone = readlineSync.question('Your answer: ');
-    if (isCorrectRepl(correctRepls[i], UserRespone)) {
+    if (isCorrectRepl(correctRepls[i], UserRespone) === true) {
       console.log('Correct!');
     }
     if (isCorrectRepl(correctRepls[i], UserRespone) === false) {
