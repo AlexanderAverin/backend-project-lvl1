@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import evenLogic from '../src/brain-evenLogic.js';
+import BrainEven from '../src/games/brain-evenLogic.js';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-console.log(evenLogic());
+console.log(BrainEven());
