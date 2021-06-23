@@ -1,26 +1,22 @@
-import gameGenerator from '../index.js';
+import CreateGame from '../index.js';
 
-const BrainEven = () => {
+const CreateBrainEven = () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-
   const questions = [];
   const correctRepls = [];
 
-  let num = null;
   let i = 0;
 
   while (i < 3) {
-    num = Math.floor(Math.random() * 100);
-    questions.push(num);
-    if (num % 2 === 0) {
+    questions.push(Math.floor(Math.random() * 100));
+    if (questions[questions.length - 1] % 2 === 0) {
       correctRepls.push('yes');
-    }
-    if (num % 2 !== 0) {
+    } else {
       correctRepls.push('no');
     }
     i += 1;
   }
-  return gameGenerator(questions, correctRepls, rules);
+  return CreateGame(questions, correctRepls, rules);
 };
 
-export default BrainEven;
+export default CreateBrainEven;
