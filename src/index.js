@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
-const isCorrectRepl = (que, correct) => que === correct;
+const isCorrectRepl = (Question, CorrectRepl) => Question === CorrectRepl;
 
-const CreateGame = (questions, correctRepls, rules) => {
+const CreateGame = (QuestionsWithRepls, rules) => {
   // Greeting
 
   console.log('Welcome to the Brain Games!');
@@ -16,13 +16,14 @@ const CreateGame = (questions, correctRepls, rules) => {
   console.log(rules);
 
   while (i < 3) {
-    console.log(`Question: ${questions[i]}`);
+    const [Question, CorrectRepl] = QuestionsWithRepls[i];
+    console.log(`Question: ${Question}`);
     const UserRespone = readlineSync.question('Your answer: ');
-    if (isCorrectRepl(correctRepls[i], UserRespone)) {
+    if (isCorrectRepl(CorrectRepl, UserRespone)) {
       console.log('Correct!');
     }
-    if (!isCorrectRepl(correctRepls[i], UserRespone)) {
-      console.log(`'${UserRespone}' is wrong answer ;(. Correct answer was '${correctRepls[i]}'.`);
+    if (!isCorrectRepl(CorrectRepl, UserRespone)) {
+      console.log(`'${UserRespone}' is wrong answer ;(. Correct answer was '${CorrectRepl}'.`);
       return `Let's try again, ${UserName}!`;
     }
     i += 1;
