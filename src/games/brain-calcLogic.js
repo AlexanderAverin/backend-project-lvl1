@@ -13,8 +13,7 @@ const GiveRandomExp = () => {
 };
 
 const CreateBrainCalc = () => {
-  const rules = 'What is the result of the expression?';
-
+  // const rules = 'What is the result of the expression?';
   const QuestionsWithRepls = [];
 
   let i = 0;
@@ -24,7 +23,7 @@ const CreateBrainCalc = () => {
     QuestionsWithRepls.push([Expression, ResultOfExpression]);
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, rules);
+  return CreateGame(QuestionsWithRepls, 'What is the result of the expression?');
 };
 
 export default CreateBrainCalc;

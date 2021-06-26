@@ -39,7 +39,6 @@ const GiveProgression = () => {
 };
 
 const BrainProgression = () => {
-  const rules = 'What number is missing in the progression?';
   const QuestionsWithRepls = [];
 
   let i = 0;
@@ -49,6 +48,6 @@ const BrainProgression = () => {
 
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, rules);
+  return CreateGame(QuestionsWithRepls, 'What number is missing in the progression?');
 };
 export default BrainProgression;

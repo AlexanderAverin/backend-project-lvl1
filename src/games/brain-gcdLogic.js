@@ -13,7 +13,7 @@ const getBiggerDivisor = (num1, num2) => {
 };
 
 const CreateBrainGcd = () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
+  // const rules = 'Find the greatest common divisor of given numbers.';
   const QuestionsWithRepls = [];
 
   let i = 0;
@@ -25,7 +25,7 @@ const CreateBrainGcd = () => {
 
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, rules);
+  return CreateGame(QuestionsWithRepls, 'Find the greatest common divisor of given numbers.');
 };
 
 export default CreateBrainGcd;
