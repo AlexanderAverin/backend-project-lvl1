@@ -14,7 +14,7 @@ const isPrime = (num) => {
 
 const BrainPrime = () => {
   const BrainPrimeRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const QuestionsWithRepls = [];
+  const PrimeQuestions = [];
 
   let i = 0;
   let RandomNumber = null;
@@ -22,11 +22,11 @@ const BrainPrime = () => {
   while (i < 3) {
     RandomNumber = GiveRandomNumber(3, 20);
     const [Question, CorrectRepl] = [RandomNumber, `${isPrime(RandomNumber)}`];
-    QuestionsWithRepls.push([Question, CorrectRepl]);
+    PrimeQuestions.push([Question, CorrectRepl]);
 
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, BrainPrimeRules);
+  return CreateGame(PrimeQuestions, BrainPrimeRules);
 };
 
 export default BrainPrime;

@@ -1,6 +1,5 @@
 import CreateGame from '../index.js';
-
-const GiveRandomNumber = (limit) => Math.floor(Math.random() * limit);
+import GiveRandomNumber from '../math.js';
 
 const getBiggerDivisor = (num1, num2) => {
   const iter = (counter) => {
@@ -14,18 +13,18 @@ const getBiggerDivisor = (num1, num2) => {
 
 const CreateBrainGcd = () => {
   const BrainGcdRules = 'Find the greatest common divisor of given numbers.';
-  const QuestionsWithRepls = [];
+  const GcdQuestions = [];
 
   let i = 0;
 
   while (i < 3) {
-    const [Number1, Number2] = [GiveRandomNumber(100), GiveRandomNumber(100)];
-    QuestionsWithRepls.push([`${Number1} ${Number2}`]);
-    QuestionsWithRepls[i].push(String(getBiggerDivisor(Number1, Number2)));
+    const [Number1, Number2] = [GiveRandomNumber(1, 100), GiveRandomNumber(1, 100)];
+    GcdQuestions.push([`${Number1} ${Number2}`]);
+    GcdQuestions[i].push(String(getBiggerDivisor(Number1, Number2)));
 
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, BrainGcdRules);
+  return CreateGame(GcdQuestions, BrainGcdRules);
 };
 
 export default CreateBrainGcd;

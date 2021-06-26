@@ -35,15 +35,15 @@ const GiveProgression = () => {
 
 const BrainProgression = () => {
   const BrainProgressionRules = 'What number is missing in the progression?';
-  const QuestionsWithRepls = [];
+  const ProgressionQuestions = [];
 
   let i = 0;
   while (i < 3) {
     const [progression, HideElement] = GiveProgression();
-    QuestionsWithRepls.push([progression, HideElement]);
+    ProgressionQuestions.push([progression, HideElement]);
 
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, BrainProgressionRules);
+  return CreateGame(ProgressionQuestions, BrainProgressionRules);
 };
 export default BrainProgression;

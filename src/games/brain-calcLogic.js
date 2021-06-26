@@ -14,16 +14,16 @@ const GiveRandomExp = () => {
 
 const CreateBrainCalc = () => {
   const BrainCalcRules = 'What is the result of the expression?';
-  const QuestionsWithRepls = [];
+  const CalcQuestions = [];
 
   let i = 0;
 
   while (i < 3) {
     const [Expression, ResultOfExpression] = GiveRandomExp();
-    QuestionsWithRepls.push([Expression, ResultOfExpression]);
+    CalcQuestions.push([Expression, ResultOfExpression]);
     i += 1;
   }
-  return CreateGame(QuestionsWithRepls, BrainCalcRules);
+  return CreateGame(CalcQuestions, BrainCalcRules);
 };
 
 export default CreateBrainCalc;
