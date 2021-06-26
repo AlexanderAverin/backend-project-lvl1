@@ -33,10 +33,8 @@ const GiveProgression = () => {
   return [ProgressionArray.join(' '), result];
 };
 
-const BrainProgression = () => {
+const BrainProgression = (ProgressionQuestions = []) => {
   const BrainProgressionRules = 'What number is missing in the progression?';
-
-  const ProgressionQuestions = [];
 
   let i = 0;
   while (i < 3) {
