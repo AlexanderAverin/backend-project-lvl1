@@ -1,10 +1,5 @@
 import CreateGame from '../index.js';
-
-const GiveRandomNumber = (min, max) => {
-  const Min = Math.ceil(min);
-  const Max = Math.floor(max);
-  return Math.floor(Math.random() * (Max - Min + 1)) + Min;
-};
+import GiveRandomNumber from '../math.js';
 
 const GiveCorrectNumber = () => {
   let Num1 = null;
