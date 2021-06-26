@@ -2,4 +2,4 @@
 
 import CreateBrainCalc from '../src/games/brain-calcLogic.js';
 
-CreateBrainCalc();
+console.log(CreateBrainCalc());

@@ -2,4 +2,4 @@
 
 import BrainProgression from '../src/games/brain-progressionLogic.js';
 
-BrainProgression();
+console.log(BrainProgression());

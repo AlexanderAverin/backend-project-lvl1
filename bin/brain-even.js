@@ -2,4 +2,4 @@
 
 import CreateBrainEven from '../src/games/brain-evenLogic.js';
 
-CreateBrainEven();
+console.log(CreateBrainEven());

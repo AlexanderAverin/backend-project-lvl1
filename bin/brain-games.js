@@ -2,4 +2,4 @@
 
 import BrainGames from '../src/cli.js';
 
-BrainGames();
+console.log(BrainGames());
