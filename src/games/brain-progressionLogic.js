@@ -35,6 +35,7 @@ const GiveProgression = () => {
 
 const BrainProgression = () => {
   const BrainProgressionRules = 'What number is missing in the progression?';
+
   const ProgressionQuestions = [];
 
   let i = 0;

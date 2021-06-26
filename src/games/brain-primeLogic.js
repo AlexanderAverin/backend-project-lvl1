@@ -14,6 +14,7 @@ const isPrime = (num) => {
 
 const BrainPrime = () => {
   const BrainPrimeRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
   const PrimeQuestions = [];
 
   let i = 0;

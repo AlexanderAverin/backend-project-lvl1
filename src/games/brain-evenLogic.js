@@ -2,6 +2,8 @@ import CreateGame from '../index.js';
 
 const CreateBrainEven = () => {
   const BrainEvenRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+
   const EvenQuestions = [];
 
   let i = 0;
