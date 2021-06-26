@@ -10,6 +10,7 @@ publish:
 lint: 
 	npx eslint .
 
+## Command for fast run game
 brain-even: 
 	node bin/brain-even.js
 

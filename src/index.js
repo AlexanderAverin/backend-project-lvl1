@@ -4,7 +4,6 @@ const isCorrectRepl = (Question, CorrectRepl) => Question === CorrectRepl;
 
 const CreateGame = (QuestionsWithRepls, rules) => {
   // Greeting
-
   console.log('Welcome to the Brain Games!');
   const UserName = readlineSync.question(`May I have your name? ${''}`);
   console.log(`Hello, ${UserName}!`);
