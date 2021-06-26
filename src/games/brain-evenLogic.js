@@ -3,10 +3,9 @@ import CreateGame from '../index.js';
 const CreateBrainEven = () => {
   const BrainEvenRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  const EvenQuestions = [];
-
   let i = 0;
 
+  const EvenQuestions = [];
   while (i < 3) {
     EvenQuestions.push([Math.floor(Math.random() * 100)]);
     if (EvenQuestions[i] % 2 === 0) {
